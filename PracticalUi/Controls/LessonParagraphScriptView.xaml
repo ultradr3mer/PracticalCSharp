@@ -16,8 +16,8 @@
   </UserControl.Resources>
   <StackPanel>
     <TextBlock Text="{Binding Text}" Margin="5" TextWrapping="Wrap"/>
-    <TextBox Text="{Binding Code}" Margin="5" Visibility="{Binding IsScriptingVisible}"/>
-    <StackPanel Orientation="Horizontal" Visibility="{Binding IsScriptingVisible}">
+    <TextBox Text="{Binding Code}" Margin="5" Visibility="{Binding ScriptingVisible}"/>
+    <StackPanel Orientation="Horizontal" Visibility="{Binding ScriptingVisible}">
       <Button Content="Execute" Command="{Binding ExecuteScriptCommand}" Margin="5"/>
       <Label Content="{Binding Result}" VerticalAlignment="Center" />
     </StackPanel>

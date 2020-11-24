@@ -2,6 +2,7 @@
 {
   using Microsoft.CodeAnalysis.CSharp.Scripting;
   using Microsoft.CodeAnalysis.Scripting;
+  using System;
   using System.Linq;
   using System.Reflection;
   using System.Threading.Tasks;
@@ -19,8 +20,7 @@
 
     public ScriptingService()
     {
-      Assembly references = Assembly.GetAssembly(typeof(Enumerable));
-      this.options = ScriptOptions.Default.AddReferences(references);
+      this.options = ScriptOptions.Default.AddReferences(Assembly.GetAssembly(typeof(Enumerable))).AddImports("System");
     }
 
     #endregion

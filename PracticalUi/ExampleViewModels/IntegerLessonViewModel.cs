@@ -4,7 +4,7 @@ using System.Windows;
 
 namespace PracticalUi.ExampleViewModels
 {
-  internal class IntegerLessonViewModel : LessonViewModel
+  internal class IntegerLessonViewModel : LessonViewModelBase
   {
     #region Constructors
 

@@ -106,11 +106,13 @@
     <Compile Include="Data\LessonParagraphData.cs" />
     <Compile Include="ExampleViewModels\IntegerLessonViewModel.cs" />
     <Compile Include="ExampleViewModels\LessonParagraphUnicornsViewModel.cs" />
+    <Compile Include="Extrensions\BindableBaseExtensions.cs" />
     <Compile Include="Extrensions\ObjectExtensionMethods.cs" />
     <Compile Include="Services\ScriptingService.cs" />
     <Compile Include="ViewModels\LessonParagraphViewModel.cs" />
     <Compile Include="ViewModels\LessonParagraphViewModelBase.cs" />
     <Compile Include="ViewModels\LessonViewModel.cs" />
+    <Compile Include="ViewModels\LessonViewModelBase.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\LessonsOverviewView.xaml.cs">
       <DependentUpon>LessonsOverviewView.xaml</DependentUpon>

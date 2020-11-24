@@ -1,5 +1,7 @@
-﻿using PracticalUi.Services;
+﻿using PracticalUi.Data;
+using PracticalUi.Services;
 using Prism.Commands;
+using System;
 using System.Windows;
 
 namespace PracticalUi.ViewModels
@@ -18,6 +20,12 @@ namespace PracticalUi.ViewModels
     {
       this.ExecuteScriptCommand = new DelegateCommand(this.ExecuteScriptCommandExecute);
       this.scriptingService = scriptingService;
+
+    }
+
+    protected override void OnReadingDataModel(LessonParagraphData data)
+    {
+      this.ScriptingVisible = data.IsScriptingVisible ? Visibility.Visible : Visibility.Collapsed;
     }
 
     #endregion Constructors
@@ -26,15 +34,20 @@ namespace PracticalUi.ViewModels
 
     public DelegateCommand ExecuteScriptCommand { get; }
 
-    public Visibility ScriptingVisible { get; set; }
-
     #endregion Properties
 
     #region Methods
 
     private async void ExecuteScriptCommandExecute()
     {
-      this.Result = await this.scriptingService.Run(this.Code);
+      try
+      {
+        this.Result = await this.scriptingService.Run(this.Code);
+      }
+      catch(Exception ex)
+      {
+        this.Result = ex.ToString();
+      }
     }
 
     #endregion Methods

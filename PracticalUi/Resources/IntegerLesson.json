@@ -1,29 +1,57 @@
 {
   "Paragraphs": [
     {
-      "IsScriptingVisible": false,
+      "IsScriptingVisible": true,
       "Code": "2 + 2",
       "Text": "Programming does not need to be complicated. It can be as easy as adding two and two. Try it out yourself."
     },
     {
-      "IsScriptingVisible": false,
+      "IsScriptingVisible": true,
       "Code": "(2).GetType()",
-      "Text": "Numbers without a decimal point are aoutomatically of the type Int32. You can retrive the type by calling the GetType() function. It works for everything in C#."
+      "Text": "Numbers without a decimal point are of the type Int32. The Int32 is how C# stores whole numbers. Both of the 2 and the resulting 4 is an Int32 in this example. To find out what type something has, you cann invoke its GetType() method. It works for everything in C#. Let us call this Method for our last result."
+    },
+    //{
+    //  "IsScriptingVisible": true,
+    //  "Code": "(2).ToString()",
+    //  "Text": "Another function that is available for everythin in C# is ToString. It creates a string representation of what it is called on."
+    //},
+    {
+      "IsScriptingVisible": false,
+      "Code": null,
+      "Text": "Let us stay with whole numbers for a moment. The Int32 data type contains 32 bits and can be noted as int or Int32, where int is the keyowrd and Int32 is the actual name for the data type. Whether you should use int or Int32 depends on your company and their coding style."
     },
     {
       "IsScriptingVisible": false,
-      "Code": "(2).ToString()",
-      "Text": "Another function that is available for everythin in C# is ToString. It creates a string representation of what it is called on."
+      "Text": "The type can be declared explicitly by wrinting (int) or (Int32) in front of the number. The result is in this case the same the same, because the compiler replaces the int keyword with Int32."
     },
     {
       "IsScriptingVisible": true,
-      "Code": null,
-      "Text": "Let us stay with whole numbers for a moment. The Integer data type contains 32 bits and can be noted as int or Int32."
+      "Code": "(int)100",
+      "Text": "Let us see what (int)100 transaltes to."
+    },
+    {
+      "IsScriptingVisible": true,
+      "Code": "(Int32)100",
+      "Text": "And what (Int32)100 transaltes to."
     },
     {
       "IsScriptingVisible": false,
-      "Code": "(int)32",
-      "Text": "The type can be stated explicitly by wrinting (int) or (Int32) in front of the number."
+      "Text": "Right now there is no diffference in the meaning of int and Int32, both mean the same for the compiler, but in the future the keyword int migt be changed to refere to somethin else, maybe Int64 or something similar."
+    },
+    {
+      "IsScriptingVisible": true,
+      "Code": "Int32.MaxValue",
+      "Text": "Let us see what the maximum whole number we can store in 32bit is."
+    },
+    {
+      "IsScriptingVisible": true,
+      "Code": "Int32.MinValue",
+      "Text": "Let us see what the maximum whole number we can store in 32bit is."
+    },
+    {
+      "IsScriptingVisible": true,
+      "Code": "3 / 2",
+      "Text": "If you perform operations with integers, the result will always be an integer. That is especially interested if you divide. If you divide like that in the real world, the result will be 1,5. But since inly integer can result in an operation of integers, it must be 1."
     }
   ],
   "Title": "Kickstart with the integer data type"

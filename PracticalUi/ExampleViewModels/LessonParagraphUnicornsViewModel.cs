@@ -11,6 +11,7 @@ namespace PracticalUi.ExampleViewModels
       this.Text = "I like unicorns";
       this.Code = "while(true) unicorns.like();";
       this.Result = "Runns forever;";
+      this.ScriptingVisible = System.Windows.Visibility.Visible;
     }
 
     #endregion Properties
