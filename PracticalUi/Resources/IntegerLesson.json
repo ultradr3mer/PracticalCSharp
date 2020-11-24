@@ -1,0 +1,30 @@
+{
+  "Paragraphs": [
+    {
+      "IsScriptingVisible": false,
+      "Code": "2 + 2",
+      "Text": "Programming does not need to be complicated. It can be as easy as adding two and two. Try it out yourself."
+    },
+    {
+      "IsScriptingVisible": false,
+      "Code": "(2).GetType()",
+      "Text": "Numbers without a decimal point are aoutomatically of the type Int32. You can retrive the type by calling the GetType() function. It works for everything in C#."
+    },
+    {
+      "IsScriptingVisible": false,
+      "Code": "(2).ToString()",
+      "Text": "Another function that is available for everythin in C# is ToString. It creates a string representation of what it is called on."
+    },
+    {
+      "IsScriptingVisible": true,
+      "Code": null,
+      "Text": "Let us stay with whole numbers for a moment. The Integer data type contains 32 bits and can be noted as int or Int32."
+    },
+    {
+      "IsScriptingVisible": false,
+      "Code": "(int)32",
+      "Text": "The type can be stated explicitly by wrinting (int) or (Int32) in front of the number."
+    }
+  ],
+  "Title": "Kickstart with the integer data type"
+}

@@ -1,15 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PracticalUi.ViewModels;
 
 namespace PracticalUi.ExampleViewModels
 {
-  class LessonParagraphUnicornsViewModel
+  internal class LessonParagraphUnicornsViewModel : LessonParagraphViewModelBase
   {
-    public string Text { get; set; } = "I like unicorns";
-    public string Code { get; set; } = "while(true) unicorns.like();";
-    public string Result { get; set; } = "Runns forever";
+    #region Properties
+
+    public LessonParagraphUnicornsViewModel()
+    {
+      this.Text = "I like unicorns";
+      this.Code = "while(true) unicorns.like();";
+      this.Result = "Runns forever;";
+    }
+
+    #endregion Properties
   }
 }

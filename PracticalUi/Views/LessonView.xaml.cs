@@ -1,18 +1,6 @@
-﻿using PracticalUi.ExampleViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using Newtonsoft.Json;
+using PracticalUi.ExampleViewModels;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace PracticalUi.Views
 {
@@ -21,11 +9,15 @@ namespace PracticalUi.Views
   /// </summary>
   public partial class LessonView : UserControl
   {
+    #region Constructors
+
     public LessonView()
     {
       InitializeComponent();
 
-      this.DataContext = new IntegerLessonViewModel();
+      this.DataContext = JsonConvert.DeserializeObject<IntegerLessonViewModel>(Properties.Resources.IntegerLesson);
     }
+
+    #endregion Constructors
   }
 }
