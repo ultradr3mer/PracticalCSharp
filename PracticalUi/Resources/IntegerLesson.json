@@ -7,8 +7,13 @@
     },
     {
       "IsScriptingVisible": true,
+      "Code": "2 * 3",
+      "Text": "Multiplying two numbers is not that different."
+    },
+    {
+      "IsScriptingVisible": true,
       "Code": "(2).GetType()",
-      "Text": "Numbers without a decimal point are of the type Int32. The Int32 is how C# stores whole numbers. Both of the 2 and the resulting 4 is an Int32 in this example. To find out what type something has, you cann invoke its GetType() method. It works for everything in C#. Let us call this Method for our last result."
+      "Text": "Numbers without a decimal point are of the type Int32. The Int32 is the usual way how C# stores whole numbers. Both of the 2 summanden and the resulting 4 in this example is an Int32. To find out what type something has, you cann invoke its GetType() method. It works for everything in C#. Let us call this Method for our last result."
     },
     //{
     //  "IsScriptingVisible": true,
@@ -51,7 +56,7 @@
     {
       "IsScriptingVisible": true,
       "Code": "3 / 2",
-      "Text": "If you perform operations with integers, the result will always be an integer. That is especially interested if you divide. If you divide like that in the real world, the result will be 1,5. But since inly integer can result in an operation of integers, it must be 1."
+      "Text": "If you perform operations with integers, the result will always be an integer. That is especially interested if you divide. If you divide like that in the real world, the result will be 1,5. But since only integer can result in an operation of integers, it must be 1, because integerdivision never round up."
     }
   ],
   "Title": "Kickstart with the integer data type"

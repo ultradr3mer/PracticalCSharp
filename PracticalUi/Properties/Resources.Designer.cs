@@ -62,36 +62,49 @@ namespace PracticalUi.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {
-        ///  &quot;openapi&quot;: &quot;3.0.1&quot;,
-        ///  &quot;info&quot;: {
-        ///    &quot;title&quot;: &quot;Handshake&quot;,
-        ///    &quot;version&quot;: &quot;0.0.1&quot;
-        ///  },
-        ///  &quot;paths&quot;: {
-        ///    &quot;/Post/getcloseposts&quot;: {
-        ///      &quot;get&quot;: {
-        ///        &quot;tags&quot;: [
-        ///          &quot;Post&quot;
-        ///        ],
-        ///        &quot;summary&quot;: &quot;Gets all posts nearby.&quot;,
-        ///        &quot;responses&quot;: {
-        ///          &quot;200&quot;: {
-        ///            &quot;description&quot;: &quot;Success&quot;
-        ///          }
-        ///        }
-        ///      }
+        ///  &quot;Paragraphs&quot;: [
+        ///    {
+        ///      &quot;IsScriptingVisible&quot;: true,
+        ///      &quot;Code&quot;: &quot;2 + 2&quot;,
+        ///      &quot;Text&quot;: &quot;Programming does not need to be complicated. It can be as easy as adding two and two. Try it out yourself.&quot;
         ///    },
-        ///    &quot;/Post&quot;: {
-        ///      &quot;post&quot;: {
-        ///        &quot;tags&quot;: [
-        ///          &quot;Post&quot;
-        ///        ],
-        ///        &quot;summary&quot;: &quot;Posts a new post.&quot;,
-        ///        &quot;reques [rest of string was truncated]&quot;;.
+        ///    {
+        ///      &quot;IsScriptingVisible&quot;: true,
+        ///      &quot;Code&quot;: &quot;2 * 3&quot;,
+        ///      &quot;Text&quot;: &quot;Multiplying two numbers is not that different.&quot;
+        ///    },
+        ///    {
+        ///      &quot;IsScriptingVisible&quot;: true,
+        ///      &quot;Code&quot;: &quot;(2).GetType()&quot;,
+        ///      &quot;Text&quot;: &quot;Numbers without a decimal point are of the type Int32. The Int32  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string IntegerLesson {
             get {
                 return ResourceManager.GetString("IntegerLesson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;Paragraphs&quot;: [
+        ///    {
+        ///      &quot;IsScriptingVisible&quot;: true,
+        ///      &quot;Code&quot;: &quot;2 + 2&quot;,
+        ///      &quot;Text&quot;: &quot;Programming does not need to be complicated. It can be as easy as adding two and two. Try it out yourself.&quot;
+        ///    },
+        ///    {
+        ///      &quot;IsScriptingVisible&quot;: true,
+        ///      &quot;Code&quot;: &quot;2 * 3&quot;,
+        ///      &quot;Text&quot;: &quot;Multiplying two numbers is not that different.&quot;
+        ///    },
+        ///    {
+        ///      &quot;IsScriptingVisible&quot;: true,
+        ///      &quot;Code&quot;: &quot;(2).GetType()&quot;,
+        ///      &quot;Text&quot;: &quot;Numbers without a decimal point are of the type Int32. The Int32  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string IntegerLesson1 {
+            get {
+                return ResourceManager.GetString("IntegerLesson1", resourceCulture);
             }
         }
     }

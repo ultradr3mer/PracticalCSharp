@@ -1,0 +1,68 @@
+{
+  "Paragraphs": [
+    {
+      "IsScriptingVisible": true,
+      "Code": "2.0 + 2.0",
+      "Text": "Since adding integer numbers was so much fun, how about we add numbers with decimal places."
+    },
+    {
+      "IsScriptingVisible": true,
+      "Code": "2.0 * 3.0",
+      "Text": "Multiplying two numbers is not that different."
+    },
+    {
+      "IsScriptingVisible": true,
+      "Code": "(6.0).GetType()",
+      "Text": "Numbers with a decimal point are of the type float, which is the keyword. Single is the actual type name. The Single is one way C# stores floating point numbers. Both of the 2.0 summanden and the resulting 4.0 in this example are a Single take note of the decimal point. Just like with the last lesson we can use GetType() to take a look at it.."
+    },
+    //{
+    //  "IsScriptingVisible": true,
+    //  "Code": "(2).ToString()",
+    //  "Text": "Another function that is available for everythin in C# is ToString. It creates a string representation of what it is called on."
+    //},
+    {
+      "IsScriptingVisible": false,
+      "Code": null,
+      "Text": "As well as the Int32 data type, the float aka Single dataType has 32 bits. But instread of using them to store every number between Int32.Min and Int32.Max. Floats are an aproximation. They have a number partition and an exponent that allows the number to grow much further thatn what an int could readch."
+    },
+    {
+      "IsScriptingVisible": false,
+      "Text": "The type can be declared explicitly by wrinting (float) or (Single) in front of the number. The result is in this case the same the same, because the compiler replaces the float keyword with Single."
+    },
+    {
+      "IsScriptingVisible": true,
+      "Code": "(float)100.0",
+      "Text": "Let us see what (float)100 transaltes to."
+    },
+    {
+      "IsScriptingVisible": true,
+      "Code": "(Single)100",
+      "Text": "And what (Single)100 transaltes to."
+    },
+    {
+      "IsScriptingVisible": false,
+      "Text": "Right now there is no diffference in the meaning of float and Single, both mean the same for the compiler, but in the future the keyword int migt be changed to refere to somethin else, maybe Double or something similar."
+    },
+    {
+      "IsScriptingVisible": true,
+      "Code": "Single.MaxValue",
+      "Text": "Let us see what the maximum whole number we can store in a 32bit float is."
+    },
+    {
+      "IsScriptingVisible": true,
+      "Code": "Single.MinValue",
+      "Text": "Let us see what the maximum whole number we can store in a 32bit float is."
+    },
+    {
+      "IsScriptingVisible": true,
+      "Code": "3.0 / 2.0",
+      "Text": "If you perform operations with floats, the result will always be a float. That is much closer than what we expected in the first lesson."
+    },
+    {
+      "IsScriptingVisible": true,
+      "Code": "2.0 / 2.0",
+      "Text": "If you perform operations with floats, the result will always be a float. Which means that there remains a 0 after the decimal point."
+    }
+  ],
+  "Title": "Kickstart with the integer data type"
+}

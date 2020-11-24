@@ -22,7 +22,7 @@
     {
       this.options = ScriptOptions.Default.AddReferences(Assembly.GetAssembly(typeof(Enumerable))).AddImports("System");
     }
-
+    
     #endregion
 
     #region Methods

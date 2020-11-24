@@ -71,6 +71,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Controls\CourseEntry.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\LessonParagraphScriptView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -99,6 +103,9 @@
     <Compile Include="Composite\BindableBaseOfTinTout.cs" />
     <Compile Include="Composite\ObjectNullBoolConverter.cs" />
     <Compile Include="Composite\StringNullOrEmptyBoolConverter.cs" />
+    <Compile Include="Controls\CourseEntry.xaml.cs">
+      <DependentUpon>CourseEntry.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\LessonParagraphScriptView.xaml.cs">
       <DependentUpon>LessonParagraphScriptView.xaml</DependentUpon>
     </Compile>
@@ -106,13 +113,18 @@
     <Compile Include="Data\LessonParagraphData.cs" />
     <Compile Include="ExampleViewModels\IntegerLessonViewModel.cs" />
     <Compile Include="ExampleViewModels\LessonParagraphUnicornsViewModel.cs" />
+    <Compile Include="ExampleViewModels\LessonsAllOverviewViewModel.cs" />
+    <Compile Include="ExampleViewModels\LessonsOverviewData.cs" />
     <Compile Include="Extrensions\BindableBaseExtensions.cs" />
     <Compile Include="Extrensions\ObjectExtensionMethods.cs" />
     <Compile Include="Services\ScriptingService.cs" />
     <Compile Include="ViewModels\LessonParagraphViewModel.cs" />
-    <Compile Include="ViewModels\LessonParagraphViewModelBase.cs" />
+    <Compile Include="ViewModels\ViewModelBases\LessonParagraphViewModelBase.cs" />
+    <Compile Include="ViewModels\LessonsOverviewEntryViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBases\LessonsOverviewViewModelBase.cs" />
+    <Compile Include="ViewModels\LessonsOverviewViewModel.cs" />
     <Compile Include="ViewModels\LessonViewModel.cs" />
-    <Compile Include="ViewModels\LessonViewModelBase.cs" />
+    <Compile Include="ViewModels\ViewModelBases\LessonViewModelBase.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\LessonsOverviewView.xaml.cs">
       <DependentUpon>LessonsOverviewView.xaml</DependentUpon>
@@ -151,6 +163,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="Resources\IntegerLesson.json" />
+    <None Include="Resources\FloatLesson.json" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MahApps.Metro">

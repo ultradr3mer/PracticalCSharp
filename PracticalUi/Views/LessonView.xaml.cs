@@ -7,7 +7,7 @@ namespace PracticalUi.Views
   /// <summary>
   /// Interaction logic for LessonView.xaml
   /// </summary>
-  public partial class LessonView : UserControl, INavigationAware
+  public partial class LessonView : UserControl
   {
     #region Constructors
 
@@ -22,19 +22,6 @@ namespace PracticalUi.Views
     #endregion Constructors
 
     #region Methods
-
-    public bool IsNavigationTarget(NavigationContext navigationContext)
-    {
-      return true;
-    }
-
-    public void OnNavigatedFrom(NavigationContext navigationContext)
-    {
-    }
-
-    public void OnNavigatedTo(NavigationContext navigationContext)
-    {
-    }
 
     #endregion Methods
   }
