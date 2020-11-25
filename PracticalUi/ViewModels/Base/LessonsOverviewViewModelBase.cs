@@ -1,9 +1,12 @@
 ﻿using PracticalUi.Composite;
-using PracticalUi.ExampleViewModels;
+using PracticalUi.Data;
 using System.Collections.ObjectModel;
 
 namespace PracticalUi.ViewModels.Base
 {
+  /// <summary>
+  /// The <see cref="LessonsOverviewViewModelBase"/> provides functionality shared between the runtime and designtime view model.
+  /// </summary>
   public class LessonsOverviewViewModelBase : BindableBase<LessonsOverviewData>
   {
     #region Properties

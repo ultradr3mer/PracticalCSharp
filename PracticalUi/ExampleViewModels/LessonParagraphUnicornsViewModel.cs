@@ -1,7 +1,11 @@
-﻿using PracticalUi.ViewModels.Base;
+﻿using PracticalUi.ViewModels;
+using PracticalUi.ViewModels.Base;
 
 namespace PracticalUi.ExampleViewModels
 {
+  /// <summary>
+  /// The <see cref="LessonParagraphUnicornsViewModel"/> class is an example for a <see cref="LessonParagraphViewModel"/>.
+  /// </summary>
   internal class LessonParagraphUnicornsViewModel : LessonParagraphViewModelBase
   {
     #region Properties

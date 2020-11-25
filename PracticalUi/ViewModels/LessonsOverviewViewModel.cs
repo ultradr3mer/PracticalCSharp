@@ -7,6 +7,9 @@ using Unity;
 
 namespace PracticalUi.ViewModels
 {
+  /// <summary>
+  /// The <see cref="LessonsOverviewViewModel"/> is the view model of the lesson overview.
+  /// </summary>
   internal class LessonsOverviewViewModel : LessonsOverviewViewModelBase
   {
     #region Fields
@@ -33,13 +36,13 @@ namespace PracticalUi.ViewModels
     {
       this.TitleLabel = "Available Courses";
 
-      var beginnerCourses = new[] {
+      LessonsOverviewEntryData[] beginnerCourses = new[] {
         new LessonsOverviewEntryData() { Name = "Integers", Data = Properties.Resources.IntegerLesson },
         new LessonsOverviewEntryData() { Name = "Floats", Data = Properties.Resources.FloatLesson }
       };
 
       this.BeginnerCourses.Clear();
-      this.BeginnerCourses.AddRange(beginnerCourses.Select(o => container.Resolve<LessonsOverviewEntryViewModel>().GetWithDataModel(o)));
+      this.BeginnerCourses.AddRange(beginnerCourses.Select(o => this.container.Resolve<LessonsOverviewEntryViewModel>().GetWithDataModel(o)));
     }
 
     #endregion Methods

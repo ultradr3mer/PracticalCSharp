@@ -1,5 +1,8 @@
 ﻿namespace PracticalUi.Data
 {
+  /// <summary>
+  /// The <see cref="LessonParagraphData"/> contains all data of a lesson paragraph.
+  /// </summary>
   public class LessonParagraphData
   {
     #region Properties

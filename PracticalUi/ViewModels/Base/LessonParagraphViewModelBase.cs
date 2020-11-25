@@ -4,6 +4,9 @@ using System.Windows;
 
 namespace PracticalUi.ViewModels.Base
 {
+  /// <summary>
+  /// The <see cref="LessonParagraphViewModelBase"/> provides functionality shared between the runtime and designtime view model.
+  /// </summary>
   public class LessonParagraphViewModelBase : BindableBase<LessonParagraphData>
   {
     #region Properties

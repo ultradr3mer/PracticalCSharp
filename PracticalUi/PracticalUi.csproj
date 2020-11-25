@@ -114,7 +114,7 @@
     <Compile Include="ExampleViewModels\IntegerLessonViewModel.cs" />
     <Compile Include="ExampleViewModels\LessonParagraphUnicornsViewModel.cs" />
     <Compile Include="ExampleViewModels\LessonsAllOverviewViewModel.cs" />
-    <Compile Include="ExampleViewModels\LessonsOverviewData.cs" />
+    <Compile Include="Data\LessonsOverviewData.cs" />
     <Compile Include="Extrensions\BindableBaseExtensions.cs" />
     <Compile Include="Extrensions\ObjectExtensionMethods.cs" />
     <Compile Include="Services\ScriptingService.cs" />

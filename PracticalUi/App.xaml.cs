@@ -10,7 +10,7 @@ using System.Windows.Controls;
 namespace PracticalUi
 {
   /// <summary>
-  /// Interaction logic for App.xaml
+  /// The <see cref="App"/> class is the main entry point.
   /// </summary>
   public partial class App
   {
@@ -25,7 +25,7 @@ namespace PracticalUi
 
     internal static void Navigate<T>(object args) where T : Page
     {
-      var content = containerInstance.Resolve<T>();
+      T content = containerInstance.Resolve<T>();
       (content.DataContext as INavigationAware)?.OnNavigatingTo(args);
       navWin.Navigate(content);
     }

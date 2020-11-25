@@ -1,14 +1,18 @@
 ﻿using PracticalUi.Composite;
+using Prism.Mvvm;
 
 namespace PracticalUi.Extrensions
 {
+  /// <summary>
+  /// The <see cref="BindableBaseExtensions"/> class provides extension functions for the <see cref="BindableBase"/>
+  /// </summary>
   public static class BindableBaseExtensions
   {
     #region Methods
 
     public static Tvm Create<Tvm, Tdata>(Tdata data) where Tvm : BindableBase<Tdata>, new()
     {
-      var vm = new Tvm();
+      Tvm vm = new Tvm();
       vm.SetDataModel(data);
       return vm;
     }

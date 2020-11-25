@@ -5,6 +5,9 @@ using Prism.Commands;
 
 namespace PracticalUi.ViewModels
 {
+  /// <summary>
+  /// The <see cref="LessonsOverviewEntryViewModel"/> is the view model of a entry in the lesson overview.
+  /// </summary>
   public class LessonsOverviewEntryViewModel : BindableBase<LessonsOverviewEntryData>
   {
     #region Constructors

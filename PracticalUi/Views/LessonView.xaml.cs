@@ -1,11 +1,10 @@
-﻿using PracticalUi.Interfaces;
-using PracticalUi.ViewModels;
+﻿using PracticalUi.ViewModels;
 using System.Windows.Controls;
 
 namespace PracticalUi.Views
 {
   /// <summary>
-  /// Interaction logic for LessonView.xaml
+  /// The <see cref="LessonView"/> displays a lesson.
   /// </summary>
   public partial class LessonView : Page
   {
@@ -13,7 +12,7 @@ namespace PracticalUi.Views
 
     public LessonView()
     {
-      InitializeComponent();
+      this.InitializeComponent();
 
       this.DataContext = App.Resolve<LessonViewModel>();
     }

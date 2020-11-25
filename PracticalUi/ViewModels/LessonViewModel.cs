@@ -1,14 +1,17 @@
 ﻿using Newtonsoft.Json;
 using PracticalUi.Data;
 using PracticalUi.Extrensions;
+using PracticalUi.Interfaces;
 using PracticalUi.ViewModels.Base;
 using System.Collections.ObjectModel;
 using System.Linq;
 using Unity;
-using PracticalUi.Interfaces;
 
 namespace PracticalUi.ViewModels
 {
+  /// <summary>
+  /// The <see cref="LessonViewModel"/> is the view model of a lesson.
+  /// </summary>
   public class LessonViewModel : LessonViewModelBase, INavigationAware
   {
     #region Fields
@@ -33,7 +36,7 @@ namespace PracticalUi.ViewModels
 
     public void Initialize()
     {
-      var data = JsonConvert.DeserializeObject<LessonData>(this.lessonContent);
+      LessonData data = JsonConvert.DeserializeObject<LessonData>(this.lessonContent);
       this.SetDataModel(data);
     }
 

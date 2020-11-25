@@ -1,11 +1,10 @@
 ﻿using PracticalUi.ViewModels;
-using Prism.Regions;
 using System.Windows.Controls;
 
 namespace PracticalUi.Views
 {
   /// <summary>
-  /// Interaction logic for LessonsOverview.xaml
+  /// The <see cref="LessonsOverviewView"/> displays an overview over lessons.
   /// </summary>
   public partial class LessonsOverviewView : Page
   {
@@ -13,7 +12,7 @@ namespace PracticalUi.Views
 
     public LessonsOverviewView()
     {
-      InitializeComponent();
+      this.InitializeComponent();
 
       this.DataContext = App.Resolve<LessonsOverviewViewModel>();
     }

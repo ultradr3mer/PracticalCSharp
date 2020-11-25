@@ -1,4 +1,6 @@
 {
+  "Title": "Integer",
+  "Description": "Kickstart with the integer data type",
   "Paragraphs": [
     {
       "IsScriptingVisible": true,
@@ -58,6 +60,5 @@
       "Code": "3 / 2",
       "Text": "If you perform operations with integers, the result will always be an integer. That is especially interested if you divide. If you divide like that in the real world, the result will be 1,5. But since only integer can result in an operation of integers, it must be 1, because integerdivision never round up."
     }
-  ],
-  "Title": "Kickstart with the integer data type"
+  ]
 }

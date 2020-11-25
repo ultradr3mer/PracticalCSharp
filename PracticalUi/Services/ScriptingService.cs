@@ -6,17 +6,23 @@
   using System.Reflection;
   using System.Threading.Tasks;
 
+  /// <summary>
+  /// The <see cref="ScriptingService"/> class is a service that provices C# roslyn scripting functionality.
+  /// </summary>
   public class ScriptingService
   {
     #region Fields
 
-    private ScriptOptions options;
+    private readonly ScriptOptions options;
     private ScriptState<object> state;
 
     #endregion Fields
 
     #region Constructors
 
+    /// <summary>
+    /// Creates a new instance of the <see cref="ScriptingService"/> class.
+    /// </summary>
     public ScriptingService()
     {
       this.options = ScriptOptions.Default.AddReferences(Assembly.GetAssembly(typeof(Enumerable))).AddImports("System");
@@ -26,6 +32,11 @@
 
     #region Methods
 
+    /// <summary>
+    /// Executes the provided code fragment.
+    /// </summary>
+    /// <param name="code">The C# code fragment.</param>
+    /// <returns>The value the code returned, if any.</returns>
     public async Task<string> Run(string code)
     {
       if (this.state == null)
@@ -37,7 +48,7 @@
         this.state = await this.state.ContinueWithAsync(code, this.options);
       }
 
-      var result = this.state.ReturnValue;
+      object result = this.state.ReturnValue;
       if (result == null)
       {
         return "null";

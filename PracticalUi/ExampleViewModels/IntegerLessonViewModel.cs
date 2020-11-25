@@ -5,6 +5,9 @@ using System.Windows;
 
 namespace PracticalUi.ExampleViewModels
 {
+  /// <summary>
+  /// The <see cref="IntegerLessonViewModel"/> contains an example lesson.
+  /// </summary>
   internal class IntegerLessonViewModel : LessonViewModelBase
   {
     #region Constructors

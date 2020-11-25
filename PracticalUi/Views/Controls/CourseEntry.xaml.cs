@@ -1,18 +1,19 @@
-﻿using PracticalUi.ViewModels;
-using Prism.Commands;
-using System;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
 
 namespace PracticalUi.Controls
 {
   /// <summary>
-  /// Interaction logic for CourseEntry
+  /// The <see cref="CourseEntry"/> control displays a course entry.
   /// </summary>
   public partial class CourseEntry : UserControl
   {
+    #region Constructors
+
     public CourseEntry()
     {
-      InitializeComponent();
+      this.InitializeComponent();
     }
+
+    #endregion Constructors
   }
 }

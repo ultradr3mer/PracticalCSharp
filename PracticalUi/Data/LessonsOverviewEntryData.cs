@@ -1,14 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PracticalUi.Data
+﻿namespace PracticalUi.Data
 {
+  /// <summary>
+  /// The <see cref="LessonsOverviewEntryData"/> contains the data for a entry in the lessons overview.
+  /// </summary>
   public class LessonsOverviewEntryData
   {
-    public string Name { get; set; }
+    #region Properties
+
     public string Data { get; set; }
+    public string Name { get; set; }
+
+    #endregion Properties
   }
 }

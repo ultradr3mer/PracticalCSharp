@@ -7,6 +7,9 @@ using System.Windows;
 
 namespace PracticalUi.ViewModels
 {
+  /// <summary>
+  /// The <see cref="LessonParagraphViewModel"/> is the view model of a lesson paragraph.
+  /// </summary>
   public class LessonParagraphViewModel : LessonParagraphViewModelBase
   {
     #region Fields
