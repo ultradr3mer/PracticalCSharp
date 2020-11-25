@@ -30,7 +30,7 @@ namespace PracticalUi
       navWin.Navigate(content);
     }
 
-    internal static object Resolve<T>()
+    internal static T Resolve<T>()
     {
       return containerInstance.Resolve<T>();
     }
@@ -39,7 +39,7 @@ namespace PracticalUi
     {
       containerInstance = this.Container;
 
-      navWin = new MetroNavigationWindow();
+      navWin = Resolve<MainWindowFactory>().Create();
       navWin.Navigate(new LessonsOverviewView());
       return navWin;
     }

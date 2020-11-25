@@ -72,6 +72,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Interfaces\INavigationAware.cs" />
+    <Compile Include="Views\MainWindowFactory.cs" />
     <Page Include="Views\Controls\CourseEntry.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -101,7 +102,6 @@
     <Compile Include="Composite\ObjectNullBoolConverter.cs" />
     <Compile Include="Composite\StringNullOrEmptyBoolConverter.cs" />
     <Compile Include="ViewModels\Base\LessonViewModelBase.cs" />
-    <Compile Include="Views\MainWindow.cs" />
     <Compile Include="Views\Controls\CourseEntry.xaml.cs">
       <DependentUpon>CourseEntry.xaml</DependentUpon>
     </Compile>
