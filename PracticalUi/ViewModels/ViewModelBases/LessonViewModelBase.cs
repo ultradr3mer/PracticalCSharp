@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 
 namespace PracticalUi.ViewModels
 {
-  internal class LessonViewModelBase : BindableBase<LessonData>
+  public class LessonViewModelBase : BindableBase<LessonData>
   {
     #region Properties
 

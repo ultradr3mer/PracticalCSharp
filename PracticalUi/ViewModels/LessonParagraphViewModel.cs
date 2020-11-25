@@ -6,7 +6,7 @@ using System.Windows;
 
 namespace PracticalUi.ViewModels
 {
-  internal class LessonParagraphViewModel : LessonParagraphViewModelBase
+  public class LessonParagraphViewModel : LessonParagraphViewModelBase
   {
     #region Fields
 

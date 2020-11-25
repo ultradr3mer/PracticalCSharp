@@ -16,7 +16,7 @@ namespace PracticalUi.Views
       InitializeComponent();
 
       this.DataContext = App.Resolve<LessonViewModel>();
-      ((LessonViewModel)this.DataContext).Initialize();
+      //((LessonViewModel)this.DataContext).Initialize();
     }
 
     #endregion Constructors

@@ -1,5 +1,6 @@
 ﻿using PracticalUi.ViewModels;
 using System.Collections.ObjectModel;
+using Unity;
 
 namespace PracticalUi.ExampleViewModels
 {
@@ -7,14 +8,17 @@ namespace PracticalUi.ExampleViewModels
   {
     #region Constructors
 
-    public LessonsAllOverviewViewModel()
+    public LessonsAllOverviewViewModel(IUnityContainer unityContainer)
     {
       this.TitleLabel = "All Available Cources";
       this.BeginnerCourses = new ObservableCollection<LessonsOverviewEntryViewModel>()
       {
-        new LessonsOverviewEntryViewModel(){ Name = "Integers"},
-        new LessonsOverviewEntryViewModel(){ Name = "Floats"}
+        unityContainer.Resolve<LessonsOverviewEntryViewModel>(),
+        unityContainer.Resolve<LessonsOverviewEntryViewModel>()
       };
+
+      this.BeginnerCourses[0].Name = "Integer";
+      this.BeginnerCourses[1].Name = "Floats";
     }
 
     #endregion Constructors

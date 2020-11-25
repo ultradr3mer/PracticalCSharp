@@ -5,7 +5,7 @@ using System.Windows;
 
 namespace PracticalUi.ViewModels
 {
-  internal class LessonParagraphViewModelBase : BindableBase<LessonParagraphData>
+  public class LessonParagraphViewModelBase : BindableBase<LessonParagraphData>
   {
     #region Properties
 

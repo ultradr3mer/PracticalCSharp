@@ -2,7 +2,7 @@
 
 namespace PracticalUi.Data
 {
-  internal class LessonData
+  public class LessonData
   {
     #region Properties
 

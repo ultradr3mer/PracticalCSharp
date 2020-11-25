@@ -18,8 +18,8 @@ namespace PracticalUi.Views
       regionManager.RegisterViewWithRegion("MainRegion", () => container.Resolve<LessonsOverviewView>());
       regionManager.RegisterViewWithRegion("MainRegion", () => container.Resolve<LessonView>());
 
-      regionManager.RequestNavigate("MainRegion", new Uri(nameof(LessonView), UriKind.Relative));
-      regionManager.RequestNavigate("MainRegion", new Uri(nameof(LessonsOverviewView), UriKind.Relative));
+      //regionManager.RequestNavigate("MainRegion", new Uri(nameof(LessonView), UriKind.Relative));
+      //regionManager.RequestNavigate("MainRegion", new Uri(nameof(LessonsOverviewView), UriKind.Relative));
     }
   }
 }

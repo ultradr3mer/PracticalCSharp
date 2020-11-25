@@ -65,22 +65,22 @@ namespace PracticalUi.Properties {
         ///  &quot;Paragraphs&quot;: [
         ///    {
         ///      &quot;IsScriptingVisible&quot;: true,
-        ///      &quot;Code&quot;: &quot;2 + 2&quot;,
-        ///      &quot;Text&quot;: &quot;Programming does not need to be complicated. It can be as easy as adding two and two. Try it out yourself.&quot;
+        ///      &quot;Code&quot;: &quot;2.0 + 2.0&quot;,
+        ///      &quot;Text&quot;: &quot;Since adding integer numbers was so much fun, how about we add numbers with decimal places.&quot;
         ///    },
         ///    {
         ///      &quot;IsScriptingVisible&quot;: true,
-        ///      &quot;Code&quot;: &quot;2 * 3&quot;,
+        ///      &quot;Code&quot;: &quot;2.0 * 3.0&quot;,
         ///      &quot;Text&quot;: &quot;Multiplying two numbers is not that different.&quot;
         ///    },
         ///    {
         ///      &quot;IsScriptingVisible&quot;: true,
-        ///      &quot;Code&quot;: &quot;(2).GetType()&quot;,
-        ///      &quot;Text&quot;: &quot;Numbers without a decimal point are of the type Int32. The Int32  [rest of string was truncated]&quot;;.
+        ///      &quot;Code&quot;: &quot;(6.0).GetType()&quot;,
+        ///      &quot;Text&quot;: &quot;Numbers with a decimal point are of the type float, which is the keywo [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string IntegerLesson {
+        internal static string FloatLesson {
             get {
-                return ResourceManager.GetString("IntegerLesson", resourceCulture);
+                return ResourceManager.GetString("FloatLesson", resourceCulture);
             }
         }
         
@@ -102,9 +102,9 @@ namespace PracticalUi.Properties {
         ///      &quot;Code&quot;: &quot;(2).GetType()&quot;,
         ///      &quot;Text&quot;: &quot;Numbers without a decimal point are of the type Int32. The Int32  [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string IntegerLesson1 {
+        internal static string IntegerLesson {
             get {
-                return ResourceManager.GetString("IntegerLesson1", resourceCulture);
+                return ResourceManager.GetString("IntegerLesson", resourceCulture);
             }
         }
     }

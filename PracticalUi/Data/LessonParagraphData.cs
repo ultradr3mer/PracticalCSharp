@@ -1,6 +1,6 @@
 ﻿namespace PracticalUi.Data
 {
-  internal class LessonParagraphData
+  public class LessonParagraphData
   {
     #region Properties
 

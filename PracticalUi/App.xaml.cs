@@ -1,4 +1,5 @@
-﻿using PracticalUi.Views;
+﻿using PracticalUi.ViewModels;
+using PracticalUi.Views;
 using Prism.Ioc;
 using System.Windows;
 
@@ -31,7 +32,7 @@ namespace PracticalUi
 
     protected override void RegisterTypes(IContainerRegistry containerRegistry)
     {
-
+      containerRegistry.RegisterSingleton<LessonViewModel>();
     }
 
     #endregion Methods

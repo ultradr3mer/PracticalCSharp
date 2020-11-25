@@ -1,4 +1,7 @@
-﻿using System.Windows.Controls;
+﻿using PracticalUi.ViewModels;
+using Prism.Commands;
+using System;
+using System.Windows.Controls;
 
 namespace PracticalUi.Controls
 {
