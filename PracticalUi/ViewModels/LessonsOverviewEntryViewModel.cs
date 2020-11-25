@@ -41,9 +41,7 @@ namespace PracticalUi.ViewModels
 
     private void CourseClickedCommandExecute()
     {
-      this.lessonViewModel.LessonContent = this.Data;
-
-      regionManager.RequestNavigate("MainRegion", new Uri(nameof(LessonView), UriKind.Relative));
+      App.RequestNavigate<LessonView>(this.Data);
     }
 
     #endregion Methods

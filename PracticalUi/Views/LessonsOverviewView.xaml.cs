@@ -7,7 +7,7 @@ namespace PracticalUi.Views
   /// <summary>
   /// Interaction logic for LessonsOverview.xaml
   /// </summary>
-  public partial class LessonsOverviewView : UserControl
+  public partial class LessonsOverviewView : Page
   {
     #region Constructors
 

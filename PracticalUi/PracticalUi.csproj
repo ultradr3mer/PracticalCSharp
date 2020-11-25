@@ -71,6 +71,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Interfaces\INavigationAware.cs" />
+    <Compile Include="ViewModels\PrismWindow1ViewModel.cs" />
     <Page Include="Views\Controls\CourseEntry.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -91,10 +93,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -104,7 +102,7 @@
     <Compile Include="Composite\ObjectNullBoolConverter.cs" />
     <Compile Include="Composite\StringNullOrEmptyBoolConverter.cs" />
     <Compile Include="ViewModels\Base\LessonViewModelBase.cs" />
-    <Compile Include="ViewModels\LessonViewModelBase.cs" />
+    <Compile Include="Views\MainWindow.cs" />
     <Compile Include="Views\Controls\CourseEntry.xaml.cs">
       <DependentUpon>CourseEntry.xaml</DependentUpon>
     </Compile>
@@ -133,10 +131,6 @@
     </Compile>
     <Compile Include="Views\LessonView.xaml.cs">
       <DependentUpon>LessonView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

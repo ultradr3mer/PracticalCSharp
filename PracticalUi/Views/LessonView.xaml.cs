@@ -1,5 +1,5 @@
-﻿using PracticalUi.ViewModels;
-using Prism.Regions;
+﻿using PracticalUi.Interfaces;
+using PracticalUi.ViewModels;
 using System.Windows.Controls;
 
 namespace PracticalUi.Views
@@ -7,7 +7,7 @@ namespace PracticalUi.Views
   /// <summary>
   /// Interaction logic for LessonView.xaml
   /// </summary>
-  public partial class LessonView : UserControl
+  public partial class LessonView : Page
   {
     #region Constructors
 
@@ -16,13 +16,8 @@ namespace PracticalUi.Views
       InitializeComponent();
 
       this.DataContext = App.Resolve<LessonViewModel>();
-      //((LessonViewModel)this.DataContext).Initialize();
     }
 
     #endregion Constructors
-
-    #region Methods
-
-    #endregion Methods
   }
 }

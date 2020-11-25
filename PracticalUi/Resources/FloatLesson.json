@@ -61,7 +61,7 @@
     {
       "IsScriptingVisible": true,
       "Code": "2.0 / 2.0",
-      "Text": "If you perform operations with floats, the result will always be a float. Which means that there remains a 0 after the decimal point."
+      "Text": "If you perform operations with floats, the result will always be a float. Even if there is no 0 after the decimal point."
     }
   ],
   "Title": "Kickstart with the integer data type"
