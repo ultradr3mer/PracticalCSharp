@@ -1,5 +1,6 @@
 ﻿using PracticalUi.Data;
 using PracticalUi.Extrensions;
+using PracticalUi.ViewModels.Base;
 using System.Collections.ObjectModel;
 using System.Linq;
 using Unity;
@@ -33,8 +34,8 @@ namespace PracticalUi.ViewModels
       this.TitleLabel = "Available Courses";
 
       var beginnerCourses = new[] {
-        new CourseData() { Name = "Integers", Data = Properties.Resources.IntegerLesson },
-        new CourseData() { Name = "Floats", Data = Properties.Resources.FloatLesson }
+        new LessonsOverviewEntryData() { Name = "Integers", Data = Properties.Resources.IntegerLesson },
+        new LessonsOverviewEntryData() { Name = "Floats", Data = Properties.Resources.FloatLesson }
       };
 
       this.BeginnerCourses.Clear();

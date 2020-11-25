@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticalUi.Data
 {
-  public class CourseData
+  public class LessonsOverviewEntryData
   {
     public string Name { get; set; }
     public string Data { get; set; }

@@ -11,12 +11,12 @@
              d:DataContext ="{d:DesignInstance {x:Type exampleViewModels:LessonsAllOverviewViewModel}, IsDesignTimeCreatable=True}">
   <Grid>
     <Label Style="{StaticResource TitleLabel}" Content="{Binding TitleLabel}" HorizontalAlignment="Left" Margin="554,10,0,0" VerticalAlignment="Top" />
-    <ListBox ItemsSource="{Binding BeginnerCourses}" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Stretch" Width="243" Background="#FFF3EEFF">
-      <ListBox.ItemTemplate>
+    <ItemsControl ItemsSource="{Binding BeginnerCourses}" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Stretch" Width="243" Background="#FFF3EEFF">
+      <ItemsControl.ItemTemplate>
         <DataTemplate >
           <controls:CourseEntry />
         </DataTemplate>
-      </ListBox.ItemTemplate>
-    </ListBox>
+      </ItemsControl.ItemTemplate>
+    </ItemsControl>
   </Grid>
 </UserControl>

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore", "DotNetCore\DotNetCore.csproj", "{B4A2119A-2094-41FB-8682-85CBC88DFC23}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticalUi", "PracticalUi\PracticalUi.csproj", "{964EC115-12FF-4786-A667-628F50FF1659}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B4A2119A-2094-41FB-8682-85CBC88DFC23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4A2119A-2094-41FB-8682-85CBC88DFC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B4A2119A-2094-41FB-8682-85CBC88DFC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B4A2119A-2094-41FB-8682-85CBC88DFC23}.Release|Any CPU.Build.0 = Release|Any CPU
 		{964EC115-12FF-4786-A667-628F50FF1659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{964EC115-12FF-4786-A667-628F50FF1659}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{964EC115-12FF-4786-A667-628F50FF1659}.Release|Any CPU.ActiveCfg = Release|Any CPU

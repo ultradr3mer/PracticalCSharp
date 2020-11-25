@@ -7,7 +7,7 @@ using System;
 
 namespace PracticalUi.ViewModels
 {
-  public class LessonsOverviewEntryViewModel : BindableBase<CourseData>
+  public class LessonsOverviewEntryViewModel : BindableBase<LessonsOverviewEntryData>
   {
     #region Fields
 

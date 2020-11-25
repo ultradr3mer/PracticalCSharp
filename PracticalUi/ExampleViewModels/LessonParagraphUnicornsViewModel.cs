@@ -1,4 +1,4 @@
-﻿using PracticalUi.ViewModels;
+﻿using PracticalUi.ViewModels.Base;
 
 namespace PracticalUi.ExampleViewModels
 {

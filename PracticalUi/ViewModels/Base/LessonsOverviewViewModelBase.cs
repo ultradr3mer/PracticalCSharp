@@ -2,7 +2,7 @@
 using PracticalUi.ExampleViewModels;
 using System.Collections.ObjectModel;
 
-namespace PracticalUi.ViewModels
+namespace PracticalUi.ViewModels.Base
 {
   public class LessonsOverviewViewModelBase : BindableBase<LessonsOverviewData>
   {
