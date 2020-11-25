@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PracticalUi.Interfaces
+﻿namespace PracticalUi.Interfaces
 {
-  interface INavigationAware
+  internal interface INavigationAware
   {
+    #region Methods
+
     void OnNavigatingTo(object args);
+
+    #endregion Methods
   }
 }

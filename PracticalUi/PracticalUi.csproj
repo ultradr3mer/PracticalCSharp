@@ -72,7 +72,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Interfaces\INavigationAware.cs" />
-    <Compile Include="ViewModels\PrismWindow1ViewModel.cs" />
     <Page Include="Views\Controls\CourseEntry.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

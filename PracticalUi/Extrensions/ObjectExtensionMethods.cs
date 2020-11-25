@@ -2,6 +2,8 @@
 {
   internal static class ObjectExtensionMethods
   {
+    #region Methods
+
     public static T CopyPropertiesFrom<T>(this T self, object parent)
     {
       var fromProperties = parent.GetType().GetProperties();
@@ -21,5 +23,7 @@
 
       return self;
     }
+
+    #endregion Methods
   }
 }

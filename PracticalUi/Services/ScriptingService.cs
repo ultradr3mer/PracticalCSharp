@@ -2,7 +2,6 @@
 {
   using Microsoft.CodeAnalysis.CSharp.Scripting;
   using Microsoft.CodeAnalysis.Scripting;
-  using System;
   using System.Linq;
   using System.Reflection;
   using System.Threading.Tasks;
@@ -14,7 +13,7 @@
     private ScriptOptions options;
     private ScriptState<object> state;
 
-    #endregion
+    #endregion Fields
 
     #region Constructors
 
@@ -22,8 +21,8 @@
     {
       this.options = ScriptOptions.Default.AddReferences(Assembly.GetAssembly(typeof(Enumerable))).AddImports("System");
     }
-    
-    #endregion
+
+    #endregion Constructors
 
     #region Methods
 
@@ -51,6 +50,6 @@
       return result.ToString();
     }
 
-    #endregion
+    #endregion Methods
   }
 }

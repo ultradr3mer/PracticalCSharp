@@ -1,9 +1,9 @@
 ﻿using MahApps.Metro.Controls;
 using PracticalUi.Interfaces;
+using PracticalUi.Services;
 using PracticalUi.ViewModels;
 using PracticalUi.Views;
 using Prism.Ioc;
-using System;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -23,6 +23,13 @@ namespace PracticalUi
 
     #region Methods
 
+    internal static void Navigate<T>(object args) where T : Page
+    {
+      var content = containerInstance.Resolve<T>();
+      (content.DataContext as INavigationAware)?.OnNavigatingTo(args);
+      navWin.Navigate(content);
+    }
+
     internal static object Resolve<T>()
     {
       return containerInstance.Resolve<T>();
@@ -40,13 +47,7 @@ namespace PracticalUi
     protected override void RegisterTypes(IContainerRegistry containerRegistry)
     {
       containerRegistry.RegisterSingleton<LessonViewModel>();
-    }
-
-    internal static void RequestNavigate<T>(object args) where T : Page
-    {
-      var content = containerInstance.Resolve<T>();
-      (content.DataContext as INavigationAware)?.OnNavigatingTo(args);
-      navWin.Navigate(content);
+      containerRegistry.RegisterSingleton<ScriptingService>();
     }
 
     #endregion Methods
