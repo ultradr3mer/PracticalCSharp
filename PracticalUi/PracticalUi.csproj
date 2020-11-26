@@ -71,6 +71,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Interfaces\IMessageDisplay.cs" />
     <Compile Include="Interfaces\INavigationAware.cs" />
     <Compile Include="Views\MainWindowFactory.cs" />
     <Page Include="Views\Controls\CourseEntry.xaml">
@@ -159,6 +160,7 @@
     </None>
     <None Include="Resources\IntegerLesson.json" />
     <None Include="Resources\FloatLesson.json" />
+    <None Include="Resources\StringsLesson.json" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MahApps.Metro">

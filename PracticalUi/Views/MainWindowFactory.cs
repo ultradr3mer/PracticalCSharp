@@ -1,18 +1,44 @@
 ﻿using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
+using PracticalUi.Interfaces;
+using System.Threading.Tasks;
+using Unity;
 
 namespace PracticalUi.Views
 {
-  public class MainWindowFactory
+  public class MainWindowFactory : IMessageDisplay
   {
+    #region Fields
+
+    private MetroNavigationWindow window;
+
+    #endregion Fields
+
+    #region Constructors
+
+    public MainWindowFactory(IUnityContainer container)
+    {
+      container.RegisterInstance<IMessageDisplay>(this);
+    }
+
+    #endregion Constructors
+
     #region Methods
 
     public MetroNavigationWindow Create()
     {
-      var window = new MetroNavigationWindow();
-      window.Title = "Practical C#";
-      window.Width = 1280;
-      window.Height = 720;
-      return window;
+      this.window = new MetroNavigationWindow
+      {
+        Title = "Practical C#",
+        Width = 1280,
+        Height = 720
+      };
+      return this.window;
+    }
+
+    public async Task ShowMessageAsync(string title, string message)
+    {
+      await this.window.ShowMessageAsync(title, message);
     }
 
     #endregion Methods

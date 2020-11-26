@@ -4,6 +4,7 @@
   using Microsoft.CodeAnalysis.Scripting;
   using System.Linq;
   using System.Reflection;
+  using System.Text;
   using System.Threading.Tasks;
 
   /// <summary>
@@ -25,7 +26,7 @@
     /// </summary>
     public ScriptingService()
     {
-      this.options = ScriptOptions.Default.AddReferences(Assembly.GetAssembly(typeof(Enumerable))).AddImports("System");
+      this.options = ScriptOptions.Default.AddReferences(Assembly.GetAssembly(typeof(Enumerable))).AddImports("System", "System.Text", "System.Linq");
     }
 
     #endregion Constructors

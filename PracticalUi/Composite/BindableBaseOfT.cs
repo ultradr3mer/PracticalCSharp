@@ -34,7 +34,8 @@ namespace PracticalUi.Composite
     /// <returns>The data model.</returns>
     public T WriteToDataModel()
     {
-      return this.attachedDataModel.CopyPropertiesFrom(this);
+      T data = this.attachedDataModel.CopyPropertiesFrom(this);
+      return this.OnWritingDataModel(data);
     }
 
     /// <summary>
@@ -43,6 +44,15 @@ namespace PracticalUi.Composite
     /// <param name="data">The data model just read.</param>
     protected virtual void OnReadingDataModel(T data)
     {
+    }
+
+    /// <summary>
+    /// Gets executed when the data model is beeing written.
+    /// </summary>
+    /// <param name="data">The data with automatic written properties.</param>
+    protected virtual T OnWritingDataModel(T data)
+    {
+      return data;
     }
 
     #endregion Methods

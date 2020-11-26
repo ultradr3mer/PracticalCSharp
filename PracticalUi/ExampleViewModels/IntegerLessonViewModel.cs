@@ -23,7 +23,9 @@ namespace PracticalUi.ExampleViewModels
         new LessonParagraphViewModel(null) { Text = "The type can be stated explicitly by wrinting (int) or (Int32) in front of the number.", Code = "(int)32", ScriptingVisible = Visibility.Visible },
       };
 
-      this.Title = "Kickstart with the integer data type";
+      this.Description = "Kickstart with the integer data type";
+
+      this.Title = "Integers";
     }
 
     #endregion Constructors

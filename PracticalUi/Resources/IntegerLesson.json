@@ -1,6 +1,6 @@
 {
   "Title": "Integer",
-  "Description": "Kickstart with the integer data type",
+  "Description": "Kickstart with the integer data type!",
   "Paragraphs": [
     {
       "IsScriptingVisible": true,
@@ -10,18 +10,17 @@
     {
       "IsScriptingVisible": true,
       "Code": "2 * 3",
-      "Text": "Multiplying two numbers is not that different."
+      "Text": "Multiplying two numbers is not that different either."
     },
     {
       "IsScriptingVisible": true,
       "Code": "(2).GetType()",
-      "Text": "Numbers without a decimal point are of the type Int32. The Int32 is the usual way how C# stores whole numbers. Both of the 2 summanden and the resulting 4 in this example is an Int32. To find out what type something has, you cann invoke its GetType() method. It works for everything in C#. Let us call this Method for our last result."
+      "Text": "The Int32 type is the usual way how C# stores whole numbers. Numbers without a decimal point are automatically of the type Int32. Both of the 2 addends and the resulting 4 in this example is an Int32. To find out what type something has, you can invoke its GetType() method just like this:"
     },
-    //{
-    //  "IsScriptingVisible": true,
-    //  "Code": "(2).ToString()",
-    //  "Text": "Another function that is available for everythin in C# is ToString. It creates a string representation of what it is called on."
-    //},
+    {
+      "IsScriptingVisible": false,
+      "Text": "It works for everything in C#. Try it with some other numbers."
+    },
     {
       "IsScriptingVisible": false,
       "Code": null,
@@ -43,22 +42,22 @@
     },
     {
       "IsScriptingVisible": false,
-      "Text": "Right now there is no diffference in the meaning of int and Int32, both mean the same for the compiler, but in the future the keyword int migt be changed to refere to somethin else, maybe Int64 or something similar."
+      "Text": "Right now there is no difference in the meaning of int and Int32, both mean the same for the compiler, but in the future the keyword int might be changed to refere to something else, maybe Int64 or something similar."
     },
     {
       "IsScriptingVisible": true,
       "Code": "Int32.MaxValue",
-      "Text": "Let us see what the maximum whole number we can store in 32bit is."
+      "Text": "Let us see what the maximum number we can store in 32bit is."
     },
     {
       "IsScriptingVisible": true,
       "Code": "Int32.MinValue",
-      "Text": "Let us see what the maximum whole number we can store in 32bit is."
+      "Text": "Let us see what the minimum number we can store in 32bit is."
     },
     {
       "IsScriptingVisible": true,
       "Code": "3 / 2",
-      "Text": "If you perform operations with integers, the result will always be an integer. That is especially interested if you divide. If you divide like that in the real world, the result will be 1,5. But since only integer can result in an operation of integers, it must be 1, because integerdivision never round up."
+      "Text": "If you perform operations with integers, the result will always be an integer. That is especially interested if you divide. If you divide like that in the real world, the result will be 1.5. But since only integer can result in an operation of integers, it must be 1, because integer division allways rounds down."
     }
   ]
 }

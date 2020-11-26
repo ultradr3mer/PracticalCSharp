@@ -17,11 +17,6 @@
       "Code": "(6.0).GetType()",
       "Text": "Numbers with a decimal point are of the type float, which is the keyword. Single is the actual type name. The Single is one way C# stores floating point numbers. Both of the 2.0 summanden and the resulting 4.0 in this example are a Single take note of the decimal point. Just like with the last lesson we can use GetType() to take a look at it.."
     },
-    //{
-    //  "IsScriptingVisible": true,
-    //  "Code": "(2).ToString()",
-    //  "Text": "Another function that is available for everythin in C# is ToString. It creates a string representation of what it is called on."
-    //},
     {
       "IsScriptingVisible": false,
       "Code": null,

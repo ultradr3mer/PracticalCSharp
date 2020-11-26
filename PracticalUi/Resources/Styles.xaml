@@ -4,4 +4,12 @@
     <Setter Property="FontFamily" Value="Calibri Light"/>
     <Setter Property="FontSize" Value="30"/>
   </Style>
+  <Style x:Key="Title2Label" TargetType="Label">
+    <Setter Property="FontFamily" Value="Calibri"/>
+    <Setter Property="FontSize" Value="20"/>
+  </Style>
+  <Style x:Key="IconButton" TargetType="Button" BasedOn="{StaticResource MahApps.Styles.Button}">
+    <Setter Property="FontSize" Value="18"/>
+    <Setter Property="FontFamily" Value="Segoe MDL2 Assets"/>
+  </Style>
 </ResourceDictionary>

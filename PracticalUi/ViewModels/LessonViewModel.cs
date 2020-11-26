@@ -3,8 +3,11 @@ using PracticalUi.Data;
 using PracticalUi.Extrensions;
 using PracticalUi.Interfaces;
 using PracticalUi.ViewModels.Base;
+using Prism.Commands;
+using System;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows;
 using Unity;
 
 namespace PracticalUi.ViewModels
@@ -17,39 +20,81 @@ namespace PracticalUi.ViewModels
     #region Fields
 
     private readonly IUnityContainer unityContainer;
-    private string lessonContent;
+    private readonly IMessageDisplay messageDisplay;
 
     #endregion Fields
 
     #region Constructors
 
-    public LessonViewModel(IUnityContainer unityContainer)
+    public LessonViewModel(IUnityContainer unityContainer, IMessageDisplay messageDisplay)
     {
       this.unityContainer = unityContainer;
+      this.messageDisplay = messageDisplay;
 
       this.Paragraphs = new ObservableCollection<LessonParagraphViewModel>();
+
+      this.CopyCommand = new DelegateCommand(this.CopyCommandExecute);
+      this.PasteCommand = new DelegateCommand(this.PasteCommandExecute);
     }
 
     #endregion Constructors
 
-    #region Methods
+    #region Properties
 
-    public void Initialize()
-    {
-      LessonData data = JsonConvert.DeserializeObject<LessonData>(this.lessonContent);
-      this.SetDataModel(data);
-    }
+    public DelegateCommand CopyCommand { get; }
+
+    public DelegateCommand PasteCommand { get; }
+
+    #endregion Properties
+
+    #region Methods
 
     public void OnNavigatingTo(object args)
     {
-      this.lessonContent = args as string;
-      this.Initialize();
+      if (!(args is string argsString))
+      {
+        return;
+      }
+
+      this.LoadFromString(argsString);
     }
 
     protected override void OnReadingDataModel(LessonData data)
     {
       this.Paragraphs.Clear();
       this.Paragraphs.AddRange(data.Paragraphs.Select(o => this.unityContainer.Resolve<LessonParagraphViewModel>().GetWithDataModel(o)));
+    }
+
+    protected override LessonData OnWritingDataModel(LessonData data)
+    {
+      data.Paragraphs = this.Paragraphs.Select(o => o.WriteToDataModel()).ToList();
+
+      return data;
+    }
+
+    private void CopyCommandExecute()
+    {
+      var json = JsonConvert.SerializeObject(this.WriteToDataModel(), Formatting.Indented);
+      Clipboard.SetText(json);
+    }
+
+    private void LoadFromString(string lessonContent)
+    {
+      LessonData data = JsonConvert.DeserializeObject<LessonData>(lessonContent);
+      this.SetDataModel(data);
+    }
+
+    private void PasteCommandExecute()
+    {
+      try
+      {
+        var json = Clipboard.GetText();
+        this.LoadFromString(json);
+      }
+      catch (Exception exception)
+      {
+        this.messageDisplay.ShowMessageAsync("Error parsing clipboard content.", exception.ToString());
+      }
     }
 
     #endregion Methods
