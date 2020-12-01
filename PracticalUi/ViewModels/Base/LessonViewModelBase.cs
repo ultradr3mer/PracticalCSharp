@@ -11,7 +11,7 @@ namespace PracticalUi.ViewModels.Base
   {
     #region Properties
 
-    public ObservableCollection<LessonParagraphViewModel> Paragraphs { get; set; }
+    public ObservableCollection<LessonParagraphViewModelBase> Paragraphs { get; set; }
 
     public string Title { get; set; }
 

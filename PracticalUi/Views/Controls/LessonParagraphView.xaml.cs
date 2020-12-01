@@ -3,13 +3,13 @@
 namespace PracticalUi.Controls
 {
   /// <summary>
-  /// The <see cref="LessonParagraphScriptView"/> control displays a script lesson paragraph.
+  /// The <see cref="LessonParagraphView"/> control displays a lesson paragraph.
   /// </summary>
-  public partial class LessonParagraphScriptView : UserControl
+  public partial class LessonParagraphView : UserControl
   {
     #region Constructors
 
-    public LessonParagraphScriptView()
+    public LessonParagraphView()
     {
       this.InitializeComponent();
     }

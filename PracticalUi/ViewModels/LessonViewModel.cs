@@ -19,8 +19,8 @@ namespace PracticalUi.ViewModels
   {
     #region Fields
 
-    private readonly IUnityContainer unityContainer;
     private readonly IMessageDisplay messageDisplay;
+    private readonly IUnityContainer unityContainer;
 
     #endregion Fields
 
@@ -31,7 +31,7 @@ namespace PracticalUi.ViewModels
       this.unityContainer = unityContainer;
       this.messageDisplay = messageDisplay;
 
-      this.Paragraphs = new ObservableCollection<LessonParagraphViewModel>();
+      this.Paragraphs = new ObservableCollection<LessonParagraphViewModelBase>();
 
       this.CopyCommand = new DelegateCommand(this.CopyCommandExecute);
       this.PasteCommand = new DelegateCommand(this.PasteCommandExecute);
@@ -62,7 +62,7 @@ namespace PracticalUi.ViewModels
     protected override void OnReadingDataModel(LessonData data)
     {
       this.Paragraphs.Clear();
-      this.Paragraphs.AddRange(data.Paragraphs.Select(o => this.unityContainer.Resolve<LessonParagraphViewModel>().GetWithDataModel(o)));
+      this.Paragraphs.AddRange(data.Paragraphs.Select(this.CreateParagraphViewModel));
     }
 
     protected override LessonData OnWritingDataModel(LessonData data)
@@ -76,6 +76,18 @@ namespace PracticalUi.ViewModels
     {
       var json = JsonConvert.SerializeObject(this.WriteToDataModel(), Formatting.Indented, new JsonSerializerSettings { DefaultValueHandling = DefaultValueHandling.Ignore });
       Clipboard.SetText(json);
+    }
+
+    private LessonParagraphViewModelBase CreateParagraphViewModel(LessonParagraphData data)
+    {
+      switch (data.ParagraphType)
+      {
+        default:
+          return this.unityContainer.Resolve<LessonParagraphViewModel>().GetWithDataModel(data);
+
+        case Enums.ParagraphType.Code:
+          return this.unityContainer.Resolve<LessonParagraphScriptViewModel>().GetWithDataModel(data);
+      }
     }
 
     private void LoadFromString(string lessonContent)

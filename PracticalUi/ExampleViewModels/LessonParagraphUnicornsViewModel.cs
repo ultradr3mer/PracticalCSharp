@@ -6,7 +6,7 @@ namespace PracticalUi.ExampleViewModels
   /// <summary>
   /// The <see cref="LessonParagraphUnicornsViewModel"/> class is an example for a <see cref="LessonParagraphViewModel"/>.
   /// </summary>
-  internal class LessonParagraphUnicornsViewModel : LessonParagraphViewModelBase
+  internal class LessonParagraphUnicornsViewModel : LessonParagraphScriptViewModelBase
   {
     #region Properties
 
@@ -15,7 +15,6 @@ namespace PracticalUi.ExampleViewModels
       this.Text = "I like unicorns";
       this.Code = "while(true) unicorns.like();";
       this.Result = "Runns forever;";
-      this.ScriptingVisible = System.Windows.Visibility.Visible;
     }
 
     #endregion Properties

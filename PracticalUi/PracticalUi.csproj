@@ -72,13 +72,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Composite\LessonParagraphTemplateSelector.cs" />
     <Compile Include="Enums\ParagraphType.cs" />
     <Compile Include="Interfaces\IMessageDisplay.cs" />
     <Compile Include="Interfaces\INavigationAware.cs" />
+    <Compile Include="ViewModels\Base\LessonParagraphScriptViewModelBase.cs" />
+    <Compile Include="ViewModels\LessonParagraphScriptViewModel.cs" />
+    <Compile Include="Views\Controls\LessonParagraphView.xaml.cs">
+      <DependentUpon>LessonParagraphView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainWindowFactory.cs" />
     <Page Include="Views\Controls\CourseEntry.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\LessonParagraphView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Controls\LessonParagraphScriptView.xaml">
       <SubType>Designer</SubType>
