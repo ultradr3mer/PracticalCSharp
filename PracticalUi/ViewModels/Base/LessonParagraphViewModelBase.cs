@@ -13,7 +13,7 @@ namespace PracticalUi.ViewModels.Base
 
     public string Code { get; set; }
     public string Result { get; set; }
-    public Visibility ScriptingVisible { get; set; }
+    public Visibility ScriptingVisible { get; set; } = Visibility.Visible;
     public string Text { get; set; }
 
     #endregion Properties

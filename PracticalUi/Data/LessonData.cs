@@ -9,11 +9,9 @@ namespace PracticalUi.Data
   {
     #region Properties
 
-    public List<LessonParagraphData> Paragraphs { get; set; }
-
-    public string Title { get; set; }
-
     public string Description { get; set; }
+    public string Title { get; set; }
+    public List<LessonParagraphData> Paragraphs { get; set; }
 
     #endregion Properties
   }

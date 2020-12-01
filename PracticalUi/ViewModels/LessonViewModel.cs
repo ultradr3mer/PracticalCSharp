@@ -74,7 +74,7 @@ namespace PracticalUi.ViewModels
 
     private void CopyCommandExecute()
     {
-      var json = JsonConvert.SerializeObject(this.WriteToDataModel(), Formatting.Indented);
+      var json = JsonConvert.SerializeObject(this.WriteToDataModel(), Formatting.Indented, new JsonSerializerSettings { DefaultValueHandling = DefaultValueHandling.Ignore });
       Clipboard.SetText(json);
     }
 

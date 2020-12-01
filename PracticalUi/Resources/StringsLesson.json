@@ -1,21 +1,21 @@
 {
+  "Description": "Operating on text",
+  "Title": "Strings",
   "Paragraphs": [
     {
-      "Code": "\"Hello World\"",
-      "IsScriptingVisible": true,
-      "Text": "The string data type is how character sequences are represented in C#. Use \" to indicate the beginn and end of a string."
+      "ParagraphType": "Code",
+      "Text": "The string data type is how character sequences are represented in C#. Use \" to indicate the beginn and end of a string.",
+      "Code": "\"Hello World\""
     },
     {
-      "Code": "\"Hello\" + \"World\"",
-      "IsScriptingVisible": true,
-      "Text": "You can simply concat strings by using a plus (+). Be aware, that this operationcreates a new instance everytime."
+      "ParagraphType": "Code",
+      "Text": "You can simply concat strings by using a plus (+). Be aware, that this operationcreates a new instance everytime.",
+      "Code": "\"Hello\" + \"World\""
     },
     {
-      "Code": "var builder = new StringBuilder(); \r\nbuilder.AppendLine(\"This is the first line\"); \r\nbuilder.Append(\"This is the second line\"); \r\nreturn builder.ToString();",
-      "IsScriptingVisible": true,
-      "Text": "If you have to do a lot of string concatination, consider using a StringBuilder. The StringBuilder allows you to continously append text, but does not create a new instance with every call. This migth not make a big difference in this example, but if you generate documents using the + operator can become a performance desaster."
+      "ParagraphType": "Code",
+      "Text": "If you have to do a lot of string concatination, consider using a StringBuilder. The StringBuilder allows you to continously append text, but does not create a new instance with every call. This migth not make a big difference in this example, but if you generate documents using the + operator can become a performance desaster.",
+      "Code": "var builder = new StringBuilder(); \r\nbuilder.AppendLine(\"This is the first line\"); \r\nbuilder.Append(\"This is the second line\"); \r\nreturn builder.ToString();"
     }
-  ],
-  "Title": "Strings",
-  "Description": "Operating on text"
+  ]
 }

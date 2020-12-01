@@ -1,63 +1,63 @@
 {
-  "Title": "Integer",
   "Description": "Kickstart with the integer data type!",
+  "Title": "Integer",
   "Paragraphs": [
     {
-      "IsScriptingVisible": true,
-      "Code": "2 + 2",
-      "Text": "Programming does not need to be complicated. It can be as easy as adding two and two. Try it out yourself."
+      "ParagraphType": "Code",
+      "Text": "Programming does not need to be complicated. It can be as easy as adding two and two. Try it out yourself.",
+      "Code": "2 + 2"
     },
     {
-      "IsScriptingVisible": true,
-      "Code": "2 * 3",
-      "Text": "Multiplying two numbers is not that different either."
+      "ParagraphType": "Code",
+      "Text": "Multiplying two numbers is not that different either.",
+      "Code": "2 * 3"
     },
     {
-      "IsScriptingVisible": true,
-      "Code": "(2).GetType()",
-      "Text": "The Int32 type is the usual way how C# stores whole numbers. Numbers without a decimal point are automatically of the type Int32. Both of the 2 addends and the resulting 4 in this example is an Int32. To find out what type something has, you can invoke its GetType() method just like this:"
+      "ParagraphType": "Code",
+      "Text": "The Int32 type is the usual way how C# stores whole numbers. Numbers without a decimal point are automatically of the type Int32. Both of the 2 addends and the resulting 4 in this example is an Int32. To find out what type something has, you can invoke its GetType() method just like this:",
+      "Code": "(2).GetType()"
     },
     {
-      "IsScriptingVisible": false,
-      "Text": "It works for everything in C#. Try it with some other numbers."
+      "ParagraphType": "Code",
+      "Text": "It works for everything in C#. Try it with some other numbers:",
+      "Code": "(4).GetType()"
     },
     {
-      "IsScriptingVisible": false,
-      "Code": null,
+      "ParagraphType": "Text",
       "Text": "Let us stay with whole numbers for a moment. The Int32 data type contains 32 bits and can be noted as int or Int32, where int is the keyowrd and Int32 is the actual name for the data type. Whether you should use int or Int32 depends on your company and their coding style."
     },
     {
-      "IsScriptingVisible": false,
+      "ParagraphType": "Text",
       "Text": "The type can be declared explicitly by wrinting (int) or (Int32) in front of the number. The result is in this case the same the same, because the compiler replaces the int keyword with Int32."
     },
     {
-      "IsScriptingVisible": true,
-      "Code": "(int)100",
-      "Text": "Let us see what (int)100 transaltes to."
+      "ParagraphType": "Code",
+      "Text": "Let us see what (int)100 transaltes to.",
+      "Code": "(int)100"
     },
     {
-      "IsScriptingVisible": true,
-      "Code": "(Int32)100",
-      "Text": "And what (Int32)100 transaltes to."
+      "ParagraphType": "Code",
+      "Text": "And what (Int32)100 transaltes to.",
+      "Code": "(Int32)100"
     },
     {
-      "IsScriptingVisible": false,
+      "ParagraphType": "Text",
       "Text": "Right now there is no difference in the meaning of int and Int32, both mean the same for the compiler, but in the future the keyword int might be changed to refere to something else, maybe Int64 or something similar."
     },
     {
-      "IsScriptingVisible": true,
-      "Code": "Int32.MaxValue",
-      "Text": "Let us see what the maximum number we can store in 32bit is."
+      "ParagraphType": "Code",
+      "Text": "Let us see what the maximum number we can store in 32bit is.",
+      "Code": "Int32.MaxValue"
     },
     {
-      "IsScriptingVisible": true,
-      "Code": "Int32.MinValue",
-      "Text": "Let us see what the minimum number we can store in 32bit is."
+      "ParagraphType": "Code",
+      "Text": "Let us see what the minimum number we can store in 32bit is.",
+      "Code": "Int32.MinValue"
     },
     {
-      "IsScriptingVisible": true,
-      "Code": "3 / 2",
-      "Text": "If you perform operations with integers, the result will always be an integer. That is especially interested if you divide. If you divide like that in the real world, the result will be 1.5. But since only integer can result in an operation of integers, it must be 1, because integer division allways rounds down."
+      "ParagraphType": "Code",
+      "Text": "If you perform operations with integers, the result will always be an integer. That is especially interested if you divide. If you divide like that in the real world, the result will be 1.5. But since only integer can result in an operation of integers, it must be 1, because integer division allways rounds down.",
+      "Code": "3 / 2"
     }
   ]
 }

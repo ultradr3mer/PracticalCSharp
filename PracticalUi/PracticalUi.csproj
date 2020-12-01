@@ -53,6 +53,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -71,6 +72,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Enums\ParagraphType.cs" />
     <Compile Include="Interfaces\IMessageDisplay.cs" />
     <Compile Include="Interfaces\INavigationAware.cs" />
     <Compile Include="Views\MainWindowFactory.cs" />
@@ -158,6 +160,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Resources\ExpressionsAlgos.json" />
     <None Include="Resources\IntegerLesson.json" />
     <None Include="Resources\FloatLesson.json" />
     <None Include="Resources\StringsLesson.json" />

@@ -62,6 +62,28 @@ namespace PracticalUi.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {
+        ///  &quot;Paragraphs&quot;: [
+        ///    {
+        ///      &quot;Code&quot;: &quot;\&quot;Hello World\&quot;&quot;,
+        ///      &quot;IsScriptingVisible&quot;: true,
+        ///      &quot;Text&quot;: &quot;The string data type is how character sequences are represented in C#. Use \&quot; to indicate the beginn and end of a string.&quot;
+        ///    },
+        ///    {
+        ///      &quot;Code&quot;: &quot;\&quot;Hello\&quot; + \&quot;World\&quot;&quot;,
+        ///      &quot;IsScriptingVisible&quot;: true,
+        ///      &quot;Text&quot;: &quot;You can simply concat strings by using a plus (+). Be aware, that this operationcreates a new instance everytime.&quot;
+        ///    },
+        ///    {
+        ///      &quot;Code&quot;: &quot;var builder = new String [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ExpressionsAlgos {
+            get {
+                return ResourceManager.GetString("ExpressionsAlgos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
         ///  &quot;Title&quot;: &quot;Floats&quot;,
         ///  &quot;Description&quot;: &quot;But what about floats?&quot;,
         ///  &quot;Paragraphs&quot;: [

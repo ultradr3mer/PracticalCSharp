@@ -38,7 +38,7 @@ namespace PracticalUi.ViewModels
 
     protected override void OnReadingDataModel(LessonParagraphData data)
     {
-      this.ScriptingVisible = data.IsScriptingVisible ? Visibility.Visible : Visibility.Collapsed;
+      this.ScriptingVisible = data.ParagraphType == Enums.ParagraphType.Code ? Visibility.Visible : Visibility.Collapsed;
     }
 
     private async void ExecuteScriptCommandExecute()

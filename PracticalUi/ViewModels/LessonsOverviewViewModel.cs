@@ -53,7 +53,8 @@ namespace PracticalUi.ViewModels
       LessonsOverviewEntryData[] beginnerCourses = new[] {
         new LessonsOverviewEntryData() { Name = "Integers", Data = Properties.Resources.IntegerLesson },
         new LessonsOverviewEntryData() { Name = "Floats", Data = Properties.Resources.FloatLesson },
-        new LessonsOverviewEntryData() { Name = "Strings", Data = Properties.Resources.StringsLesson }
+        new LessonsOverviewEntryData() { Name = "Strings", Data = Properties.Resources.StringsLesson },
+        new LessonsOverviewEntryData() { Name = "Expressions and algorithms", Data = Properties.Resources.ExpressionsAlgos }
       };
 
       this.BeginnerCourses.Clear();
