@@ -74,10 +74,16 @@
     </ApplicationDefinition>
     <Compile Include="Composite\LessonParagraphTemplateSelector.cs" />
     <Compile Include="Enums\ParagraphType.cs" />
+    <Compile Include="ExampleViewModels\LessonParagraphQuadraticFunctionViewModelBase.cs" />
     <Compile Include="Interfaces\IMessageDisplay.cs" />
     <Compile Include="Interfaces\INavigationAware.cs" />
+    <Compile Include="ViewModels\Base\LessonParagraphMathViewModelBase.cs" />
     <Compile Include="ViewModels\Base\LessonParagraphScriptViewModelBase.cs" />
+    <Compile Include="ViewModels\LessonParagraphMathViewModel.cs" />
     <Compile Include="ViewModels\LessonParagraphScriptViewModel.cs" />
+    <Compile Include="Views\Controls\LessonParagraphMathView.xaml.cs">
+      <DependentUpon>LessonParagraphMathView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Controls\LessonParagraphView.xaml.cs">
       <DependentUpon>LessonParagraphView.xaml</DependentUpon>
     </Compile>
@@ -85,6 +91,10 @@
     <Page Include="Views\Controls\CourseEntry.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\LessonParagraphMathView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Controls\LessonParagraphView.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -113,7 +123,7 @@
     <Compile Include="Composite\BindableBaseOfT.cs" />
     <Compile Include="Composite\BindableBaseOfTinTout.cs" />
     <Compile Include="Composite\ObjectNullBoolConverter.cs" />
-    <Compile Include="Composite\StringNullOrEmptyBoolConverter.cs" />
+    <Compile Include="Composite\StringNullOrEmptyVisibilityConverter.cs" />
     <Compile Include="ViewModels\Base\LessonViewModelBase.cs" />
     <Compile Include="Views\Controls\CourseEntry.xaml.cs">
       <DependentUpon>CourseEntry.xaml</DependentUpon>
@@ -162,6 +172,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="FodyWeavers.xsd">
       <SubType>Designer</SubType>
@@ -170,6 +181,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Resources\MathFunctions.json" />
     <None Include="Resources\ExpressionsAlgos.json" />
     <None Include="Resources\IntegerLesson.json" />
     <None Include="Resources\FloatLesson.json" />
@@ -184,6 +196,9 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="OxyPlot.Wpf">
+      <Version>2.1.0-Preview1</Version>
     </PackageReference>
     <PackageReference Include="Prism.Unity" Version="7.2.0.1422" />
     <PackageReference PrivateAssets="all" Include="PropertyChanged.Fody">

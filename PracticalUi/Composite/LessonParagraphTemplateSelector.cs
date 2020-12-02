@@ -26,6 +26,11 @@ namespace PracticalUi.Composite
         return this.CodeTemplate;
       }
 
+      if(item is LessonParagraphMathViewModel)
+      {
+        return this.MathTemplate;
+      }
+
       return this.TextTemplate;
     }
 

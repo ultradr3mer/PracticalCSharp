@@ -62,19 +62,10 @@ namespace PracticalUi.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {
-        ///  &quot;Paragraphs&quot;: [
-        ///    {
-        ///      &quot;Code&quot;: &quot;\&quot;Hello World\&quot;&quot;,
-        ///      &quot;IsScriptingVisible&quot;: true,
-        ///      &quot;Text&quot;: &quot;The string data type is how character sequences are represented in C#. Use \&quot; to indicate the beginn and end of a string.&quot;
-        ///    },
-        ///    {
-        ///      &quot;Code&quot;: &quot;\&quot;Hello\&quot; + \&quot;World\&quot;&quot;,
-        ///      &quot;IsScriptingVisible&quot;: true,
-        ///      &quot;Text&quot;: &quot;You can simply concat strings by using a plus (+). Be aware, that this operationcreates a new instance everytime.&quot;
-        ///    },
-        ///    {
-        ///      &quot;Code&quot;: &quot;var builder = new String [rest of string was truncated]&quot;;.
+        ///  &quot;Paragraphs&quot;: [],
+        ///  &quot;Title&quot;: &quot;Expressions and algorythms&quot;,
+        ///  &quot;Description&quot;: &quot;The difference between C# expressions and algorythms&quot;
+        ///}.
         /// </summary>
         internal static string ExpressionsAlgos {
             get {
@@ -84,23 +75,22 @@ namespace PracticalUi.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {
-        ///  &quot;Title&quot;: &quot;Floats&quot;,
         ///  &quot;Description&quot;: &quot;But what about floats?&quot;,
+        ///  &quot;Title&quot;: &quot;Floats&quot;,
         ///  &quot;Paragraphs&quot;: [
         ///    {
-        ///      &quot;IsScriptingVisible&quot;: true,
-        ///      &quot;Code&quot;: &quot;2.0 + 2.0&quot;,
-        ///      &quot;Text&quot;: &quot;Since adding integer numbers was so much fun, how about we add numbers with decimal places.&quot;
+        ///      &quot;ParagraphType&quot;: &quot;Code&quot;,
+        ///      &quot;Text&quot;: &quot;Since adding integer numbers was so much fun, how about we add numbers with decimal places.&quot;,
+        ///      &quot;Code&quot;: &quot;2.0 + 2.0&quot;
         ///    },
         ///    {
-        ///      &quot;IsScriptingVisible&quot;: true,
-        ///      &quot;Code&quot;: &quot;2.0 * 3.0&quot;,
-        ///      &quot;Text&quot;: &quot;Multiplying two numbers is not that different.&quot;
+        ///      &quot;ParagraphType&quot;: &quot;Code&quot;,
+        ///      &quot;Text&quot;: &quot;Multiplying two numbers is not that different.&quot;,
+        ///      &quot;Code&quot;: &quot;2.0 * 3.0&quot;
         ///    },
         ///    {
-        ///      &quot;IsScriptingVisible&quot;: true,
-        ///      &quot;Code&quot;: &quot;(6.0).GetType()&quot;,
-        ///      &quot;Text&quot;: &quot;Numb [rest of string was truncated]&quot;;.
+        ///      &quot;ParagraphType&quot;: &quot;Code&quot;,
+        ///      &quot;Text&quot;: &quot;Numbers with a decimal point are of the type fl [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string FloatLesson {
             get {
@@ -110,22 +100,22 @@ namespace PracticalUi.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {
-        ///  &quot;Title&quot;: &quot;Integer&quot;,
         ///  &quot;Description&quot;: &quot;Kickstart with the integer data type!&quot;,
+        ///  &quot;Title&quot;: &quot;Integer&quot;,
         ///  &quot;Paragraphs&quot;: [
         ///    {
-        ///      &quot;IsScriptingVisible&quot;: true,
-        ///      &quot;Code&quot;: &quot;2 + 2&quot;,
-        ///      &quot;Text&quot;: &quot;Programming does not need to be complicated. It can be as easy as adding two and two. Try it out yourself.&quot;
+        ///      &quot;ParagraphType&quot;: &quot;Code&quot;,
+        ///      &quot;Text&quot;: &quot;Programming does not need to be complicated. It can be as easy as adding two and two. Try it out yourself.&quot;,
+        ///      &quot;Code&quot;: &quot;2 + 2&quot;
         ///    },
         ///    {
-        ///      &quot;IsScriptingVisible&quot;: true,
-        ///      &quot;Code&quot;: &quot;2 * 3&quot;,
-        ///      &quot;Text&quot;: &quot;Multiplying two numbers is not that different either.&quot;
+        ///      &quot;ParagraphType&quot;: &quot;Code&quot;,
+        ///      &quot;Text&quot;: &quot;Multiplying two numbers is not that different either.&quot;,
+        ///      &quot;Code&quot;: &quot;2 * 3&quot;
         ///    },
         ///    {
-        ///      &quot;IsScriptingVisible&quot;: true,
-        ///      &quot;Code&quot;: &quot;(2).GetT [rest of string was truncated]&quot;;.
+        ///      &quot;ParagraphType&quot;: &quot;Code&quot;,
+        ///      &quot;Text&quot;: &quot;The Int32 type is [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string IntegerLesson {
             get {
@@ -135,19 +125,37 @@ namespace PracticalUi.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {
+        ///  &quot;Description&quot;: &quot;Math functions&quot;,
+        ///  &quot;Title&quot;: &quot;Lets do some math&quot;,
         ///  &quot;Paragraphs&quot;: [
         ///    {
-        ///      &quot;Code&quot;: &quot;\&quot;Hello World\&quot;&quot;,
-        ///      &quot;IsScriptingVisible&quot;: true,
-        ///      &quot;Text&quot;: &quot;The string data type is how character sequences are represented in C#. Use \&quot; to indicate the beginn and end of a string.&quot;
+        ///      &quot;ParagraphType&quot;: &quot;Math&quot;,
+        ///      &quot;Text&quot;: &quot;Try out this function:&quot;,
+        ///      &quot;Code&quot;: &quot;x =&gt; x * x&quot;
+        ///    }
+        ///  ]
+        ///}.
+        /// </summary>
+        internal static string MathFunctions {
+            get {
+                return ResourceManager.GetString("MathFunctions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;Description&quot;: &quot;Operating on text&quot;,
+        ///  &quot;Title&quot;: &quot;Strings&quot;,
+        ///  &quot;Paragraphs&quot;: [
+        ///    {
+        ///      &quot;ParagraphType&quot;: &quot;Code&quot;,
+        ///      &quot;Text&quot;: &quot;The string data type is how character sequences are represented in C#. Use \&quot; to indicate the beginn and end of a string.&quot;,
+        ///      &quot;Code&quot;: &quot;\&quot;Hello World\&quot;&quot;
         ///    },
         ///    {
-        ///      &quot;Code&quot;: &quot;\&quot;Hello\&quot; + \&quot;World\&quot;&quot;,
-        ///      &quot;IsScriptingVisible&quot;: true,
-        ///      &quot;Text&quot;: &quot;You can simply concat strings by using a plus (+). Be aware, that this operationcreates a new instance everytime.&quot;
-        ///    },
-        ///    {
-        ///      &quot;Code&quot;: &quot;var builder = new String [rest of string was truncated]&quot;;.
+        ///      &quot;ParagraphType&quot;: &quot;Code&quot;,
+        ///      &quot;Text&quot;: &quot;You can simply concat strings by using a plus (+). Be aware, that this operationcreates a new instance everytime.&quot;,
+        ///      &quot;Code&quot;: &quot;\&quot;Hello\&quot; + \&quot;World\&quot;&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string StringsLesson {
             get {

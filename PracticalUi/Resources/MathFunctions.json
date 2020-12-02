@@ -1,0 +1,28 @@
+{
+  "Description": "Math functions",
+  "Title": "Lets do some math",
+  "Paragraphs": [
+    {
+      "ParagraphType": "Math",
+      "Text": "Try out this function:",
+      "Code": "x => x * x",
+      "XMin": -5.0,
+      "XMax": 5.0,
+      "YMin": 0.0,
+      "YMax": 10.0,
+      "GraphStep": 0.01,
+      "GridStep": 1.0
+    },
+    {
+      "ParagraphType": "Math",
+      "Text": "Also Sin:",
+      "Code": "x => Math.Sin(x*2)",
+      "XMin": -5.0,
+      "XMax": 5.0,
+      "YMin": -5.0,
+      "YMax": 5.0,
+      "GraphStep": 0.01,
+      "GridStep": 1.0
+    }
+  ]
+}

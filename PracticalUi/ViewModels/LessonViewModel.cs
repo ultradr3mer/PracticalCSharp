@@ -87,6 +87,9 @@ namespace PracticalUi.ViewModels
 
         case Enums.ParagraphType.Code:
           return this.unityContainer.Resolve<LessonParagraphScriptViewModel>().GetWithDataModel(data);
+
+        case Enums.ParagraphType.Math:
+          return this.unityContainer.Resolve<LessonParagraphMathViewModel>().GetWithDataModel(data);
       }
     }
 

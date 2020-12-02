@@ -12,14 +12,18 @@
              d:DataContext ="{d:DesignInstance {x:Type exampleViewModels:IntegerLessonViewModel}, IsDesignTimeCreatable=True}">
   <Page.Resources>
     <DataTemplate x:Key="TextTemplate">
-      <controls:LessonParagraphView Focusable = "False" />
+      <controls:LessonParagraphView />
     </DataTemplate>
     <DataTemplate x:Key="CodeTemplate">
-      <controls:LessonParagraphScriptView Focusable = "False" />
+      <controls:LessonParagraphScriptView />
     </DataTemplate>
-    <comp:LessonParagraphTemplateSelector x:Key="LessonParagraphTemplateSelector" 
-                                         TextTemplate="{StaticResource TextTemplate}"
-                                         CodeTemplate="{StaticResource CodeTemplate}"/>
+    <DataTemplate x:Key="MathTemplate">
+      <controls:LessonParagraphMathView />
+    </DataTemplate>
+    <comp:LessonParagraphTemplateSelector x:Key="LessonParagraphTemplateSelector"
+                                          TextTemplate="{StaticResource TextTemplate}"
+                                          CodeTemplate="{StaticResource CodeTemplate}"
+                                          MathTemplate="{StaticResource MathTemplate}" />
   </Page.Resources>
   <Grid>
     <ScrollViewer>
